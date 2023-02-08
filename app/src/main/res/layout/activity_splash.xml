@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    tools:context=".activities.SplashActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:padding="50dp"
+        android:layout_marginTop="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/capsule" />
+
+    <TextView
+        android:id="@+id/from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/from_motwkel_idris_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#1A237E" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@id/from_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo_txt"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ImageContrastCheck" />
+
+
+</RelativeLayout>

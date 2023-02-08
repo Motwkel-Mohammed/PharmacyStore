@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">DrugStorage</string>
+    <string name="delete_icon">delete</string>
+    <string name="undo_text">Undo</string>
+    <string name="new_medicine_txt">New Medicine</string>
+    <string name="medicine_name_txt">Medicine Name</string>
+    <string name="medicine_notes_txt">Medicine Notes</string>
+    <string name="medicine_price_txt">Medicine Price</string>
+    <string name="medicine_number_txt">Quantity</string>
+    <string name="medicine_type_txt">Medicine Type</string>
+    <string name="medicine_tag_txt">Medicine Tag</string>
+    <string name="todo_txt">TODO</string>
+    <string name="save_txt">Save</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="no_medicine_available_txt">No Medicine Available</string>
+    <string name="_60_pills_txt">(60 pills)</string>
+    <string name="drug_name_txt">Drug Name</string>
+    <string name="price__txt">0.0 $</string>
+    <string name="from_motwkel_idris_txt">By: Motwkel Idris</string>
+    <string name="about_txt">About</string>
+    <string name="about_me_txt"><![CDATA[👋 Hi, I’m motwkel-idris\n👀 I’m interested in Android Development (Kotlin), RestApi, DeepLearning,etc \n💞️ I’m looking to collaborate on Developing Artificial intelligence mobile applications\n📫 You can reach me on LinkedIn by:]]></string>
+    <string name="about_developer_txt">About developer</string>
+    <string name="about_app_txt">This an app to store medicines with their details, in an interactive way. The app have multiple services, like saving, deleting, and updating medicines, and it is built regarding modern design aspects and development patterns.</string>
+    <string name="about_the_app_txt">About the app</string>
+    <string name="linkedin_btn">Linkedin</string>
+    <string name="no_medicine_txt">No Medicine</string>
+    <string name="count_txt">Count</string>
+    <string name="advance_search_filter_txt">Advance search filter</string>
+    <string name="apply_txt">Apply</string>
+    <string name="measurement_txt">Measurement</string>
+    <string name="or_txt">OR</string>
+    <string name="whatsapp_btn">Whatsapp</string>
+    <string name="scientific_name_txt">Scientific Name</string>
+    <string name="medicine_industrial_txt">Medicine Industrial</string>
+    <string name="restore_txt">Restore</string>
+    <string name="backup_txt">Backup</string>
+
+    <string-array name="drug_type">
+        <item>Tablet</item>
+        <item>Injection</item>
+        <item>Syrup</item>
+        <item>Infusion</item>
+        <item>Spray</item>
+        <item>Cream</item>
+        <item>Powder</item>
+        <item>Drop</item>
+        <item>Suppository</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

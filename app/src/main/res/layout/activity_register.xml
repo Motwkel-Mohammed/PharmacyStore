@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context=".activities.RegisterActivity">
+
+        <TextView
+            android:id="@+id/new_edit_drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/new_medicine_txt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#4A148C" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_edit_drug"
+            android:layoutMode="clipBounds"
+            app:boxBackgroundColor="#80DEEA"
+            app:boxStrokeColor="@color/design_default_color_primary"
+            app:endIconCheckable="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/drug_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/round_require_24"
+                android:hint="@string/medicine_name_txt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#1A237E"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/layout_6"
+            android:layout_below="@id/layout_1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layoutMode="clipBounds"
+                app:boxBackgroundColor="#80DEEA"
+                app:boxStrokeColor="@color/design_default_color_primary"
+                app:endIconCheckable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/drug_scientific_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/scientific_name_txt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#1A237E"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layoutMode="clipBounds"
+                app:boxBackgroundColor="#80DEEA"
+                app:boxStrokeColor="@color/design_default_color_primary"
+                app:endIconCheckable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/drug_industrial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medicine_industrial_txt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#1A237E"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layoutMode="clipBounds"
+            app:boxBackgroundColor="#80DEEA"
+            app:boxStrokeColor="@color/design_default_color_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/drug_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/medicine_notes_txt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#1A237E"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_6"
+            android:layoutMode="clipBounds"
+            app:boxBackgroundColor="#80DEEA"
+            app:boxStrokeColor="@color/design_default_color_primary"
+            app:endIconCheckable="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/drug_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/round_require_24"
+                android:hint="@string/medicine_price_txt"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#1A237E"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_2"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:layoutMode="clipBounds"
+                app:boxBackgroundColor="#80DEEA"
+                app:boxStrokeColor="@color/design_default_color_primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/drug_number_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medicine_number_txt"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#1A237E"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layoutMode="clipBounds"
+                app:boxBackgroundColor="#80DEEA"
+                app:boxStrokeColor="@color/design_default_color_primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/drug_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/measurement_txt"
+                    android:inputType="text"
+                    android:maxLength="12"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#1A237E"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#80DEEA"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/medicine_type_txt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#33595E"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/drug_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:dropDownWidth="150dp"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_5"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layoutMode="opticalBounds"
+            android:paddingStart="0dp"
+            android:paddingEnd="60dp"
+            app:boxBackgroundColor="#80DEEA"
+            app:boxStrokeColor="@color/design_default_color_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/drug_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/medicine_tag_txt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#1A237E"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/add_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_3"
+            android:layout_alignTop="@id/layout_4"
+            android:layout_alignEnd="@id/layout_4"
+            android:layout_alignBottom="@id/layout_4"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#80DEEA"
+            android:contentDescription="@string/todo_txt"
+            android:src="@drawable/ic_outline_add_24"
+            app:tint="#1A237E"
+            tools:ignore="ImageContrastCheck" />
+
+        <!-- Tag Chip-->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_4"
+            android:layout_marginBottom="10dp">
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <Button
+            android:id="@+id/save_drug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chip_group"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/save_txt"
+            android:textAllCaps="false"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/cancel_drug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chip_group"
+            android:layout_toEndOf="@id/save_drug"
+            android:text="@string/cancel_txt"
+            android:textAllCaps="false"
+            tools:ignore="TextContrastCheck" />
+
+
+    </RelativeLayout>
+</ScrollView>
