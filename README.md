@@ -6,3 +6,8 @@ This app supports the following features:
 - Update medicine
 - Search medicine (all, by-name, by-name-and-type)
 - Swipe gestures for updating and deleting medicine
+
+## For next version
+- Support backup and restore
+- Connect it to the network
+- ...
