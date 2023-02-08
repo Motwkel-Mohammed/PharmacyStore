@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#90CAF9</color>
+    <color name="purple_500">#2196F3</color>
+    <color name="purple_700">#1976D2</color>
+    <color name="teal_200">#E6EE9C</color>
+    <color name="teal_700">#AFB42B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Chip colors -->
+    <color name="chip_1">#b3e5fc</color>
+    <color name="chip_2">#f8bbd0</color>
+    <color name="chip_3">#bcaaa4</color>
+    <color name="chip_4">#c8e6c9</color>
+    <color name="chip_5">#ffe0b2</color>
+    <color name="chip_6">#f0f4c3</color>
+    <color name="chip_7">#c5cae9</color>
+    <color name="chip_8">#e1bee7</color>
+    <color name="chip_9">#ffcdd2</color>
+</resources>

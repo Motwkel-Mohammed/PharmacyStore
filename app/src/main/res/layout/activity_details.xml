@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#79A5FFD6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.DetailsActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            app:cardBackgroundColor="#a5ffd6"
+            android:rotation="-35"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            app:cardBackgroundColor="#a5ffd6"
+            android:rotation="35"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp" />
+
+        <ImageView
+            android:id="@+id/drug_image"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo_txt"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/medical_drip"
+            tools:ignore="ImageContrastCheck" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="260dp"
+            android:elevation="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/drug_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/drug_price"
+                android:elevation="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#1A237E"
+                android:textStyle="bold"
+                tools:text="Espresso" />
+
+            <TextView
+                android:id="@+id/drug_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drug_detail"
+                android:elevation="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#311B92"
+                android:textStyle="bold"
+                tools:text="(60 pills)" />
+
+            <TextView
+                android:id="@+id/drug_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/drug_name"
+                android:elevation="10dp"
+                android:layout_toStartOf="@id/drug_price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#1A237E"
+                android:textStyle="italic"
+                tools:text="Aldool, from KSA" />
+
+            <TextView
+                android:id="@+id/drug_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#311B92"
+                android:textStyle="bold"
+                tools:text="$7.90" />
+
+            <TextView
+                android:id="@+id/drug_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drug_number"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#1A237E"
+                tools:text="Intrinsicly evisculate innovative e-markets whereas optimal e-tailers. Conveniently predominate vertical." />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drug_description"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp">
+
+            </com.google.android.material.chip.ChipGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
